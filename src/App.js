@@ -1,28 +1,57 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Routes,
+  Route,
+  useNavigationType,
+  useLocation,
+} from "react-router-dom";
+import AboutUsDesktop from "./pages/AboutUsDesktop";
+import { useEffect } from "react";
+import HomePageDesktop from "./pages/HomePageDesktop";
+import ProductDesktop from "./pages/ProductDesktop";
+import ContactPageDesktop from "./pages/ContactPageDesktop";
+function App() {
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hello from Render!
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
+
+  useEffect(() => {
+    let title = "";
+    let metaDescription = "";
+
+    switch (pathname) {
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
+    }
+
+    if (title) {
+      document.title = title;
+    }
+
+    if (metaDescription) {
+      const metaDescriptionTag = document.querySelector(
+        'head > meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = metaDescription;
+      }
+    }
+  }, [pathname]);
+
+  return (
+    <Routes>
+      <Route path="/aboutPage" element={<AboutUsDesktop />} />
+      <Route path="/" element={<HomePageDesktop />} />
+      <Route path="/productPage" element={<ProductDesktop />} />
+      <Route path="/contactPage" element={<ContactPageDesktop />} />
+    </Routes>
+  );
 }
-
 export default App;
