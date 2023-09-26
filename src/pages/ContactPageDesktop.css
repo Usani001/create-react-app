@@ -1,10 +1,12 @@
 .footer-child4 {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
+  right: 0px;
   background-color: #492612;
-  width: 1440px;
+  width: 100%;
   height: 540px;
+  
 }
 .copyright-c-20234 {
   position: absolute;
@@ -67,7 +69,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
   line-height: 22.39px;
   opacity: 0.7;
 }
@@ -421,16 +423,17 @@
   display: inline-block;
 }
 .content44 {
-  width: 116.17%;
+  width: 100.17%;
   top: calc(50% - 211px);
-  right: -16.17%;
+  right: 0%;
+  left: 0%;
   height: 421.76px;
 }
 .contacts4 {
   position: absolute;
   top: 1129px;
   left: 136px;
-  width: 1166px;
+  width: 1200px;
   height: 422px;
 }
 .text44,
@@ -456,7 +459,7 @@
   position: absolute;
   top: 474px;
   left: 134px;
-  width: 1172px;
+  right: 134px;
   height: 556px;
   object-fit: cover;
 }
@@ -543,3 +546,4 @@
   color: #01021d;
   font-family: Inter;
 }
+

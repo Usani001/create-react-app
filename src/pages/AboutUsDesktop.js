@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 function AboutUsDesktop() {
   return (
+    // In your React component's render method or JSX:
+
     <div className="about-us-desktop22">
       <div className="footer22">
         <div className="footer-child22" />
