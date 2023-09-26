@@ -1,8 +1,11 @@
+
+
+
 .footer-child4 {
   position: absolute;
   top: 0;
-  left: 0px;
-  right: 0px;
+  left: 0%;
+  right: 0%;
   background-color: #492612;
   width: 100%;
   height: 540px;
@@ -150,6 +153,8 @@
 }
 .parliamentary-village-calabar4 {
   margin: 0;
+  width: 200px;
+  letter-spacing: -1.11px;
 }
 .nigeria4 {
   color: #1e1f3d;
@@ -425,7 +430,7 @@
 .content44 {
   width: 100.17%;
   top: calc(50% - 211px);
-  right: 0%;
+  right: 90%;
   left: 0%;
   height: 421.76px;
 }
@@ -458,8 +463,8 @@
 .image-icon4 {
   position: absolute;
   top: 474px;
-  left: 134px;
-  right: 134px;
+  left: 10%;
+  right: 10%;
   height: 556px;
   object-fit: cover;
 }
@@ -481,7 +486,7 @@
   top: 176px;
   left: 378px;
   font-size: 72px;
-  letter-spacing: -2.49px;
+  letter-spacing: -1.49px;
   line-height: 80px;
   font-weight: 600;
   color: #07753e;
@@ -546,4 +551,26 @@
   color: #01021d;
   font-family: Inter;
 }
+
+@media screen and (max-width: 1300px) and (min-width: 100px) {
+  .text44{
+    position: absolute;
+    width: 40.28%;
+    top: calc(63% + 154.5px);
+    left: 11%;
+    letter-spacing: -1.11px;
+    line-height: 32px;
+  }
+  .title14 {
+    position: absolute;
+    width: 40.28%;
+    top: calc(61% + 154.5px);
+    left: 11%;
+    letter-spacing: -6.11px;
+    line-height: 22px;
+
+  }
+  
+}
+
 

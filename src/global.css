@@ -3,7 +3,9 @@ body {
   margin: 0;
   line-height: normal;
   width: 100%;
-  /* display: block; */
+  height: 200%;
+  display: inline-block;
+  
 }
 
 
