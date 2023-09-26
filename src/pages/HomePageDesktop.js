@@ -1,6 +1,6 @@
 import "./HomePageDesktop.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+
 const HomePageDesktop = () => {
   return (
     <div className="home-page-desktop">

@@ -1,6 +1,5 @@
 import "./ProductDesktop.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const ProductDesktop = () => {
   return (

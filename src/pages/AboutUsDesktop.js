@@ -1,6 +1,5 @@
 import "./AboutUsDesktop.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function AboutUsDesktop() {
   return (
