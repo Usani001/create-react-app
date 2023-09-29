@@ -315,7 +315,7 @@ const HomePageDesktop = () => {
             <img className="icon6" alt="" src="/icon5.svg" />
           </div>
         </div>
-        <img className="icon7" alt="" src="/6-1@2x.png" />
+        <img className="icon7" alt="" src="/6 1.png" />
       </div>
       <div className="navigation">
         <div className="links">
